@@ -25,7 +25,7 @@
       " title="Imagem de um gato">
     
      <article>
-        <p> Olá sou um gato laranja,!!</p>
+        <p> Olá sou um gato laranja</p>
      </article>
     
      <aside>
@@ -36,7 +36,7 @@
           <li>HTML</li>
           <li>CSS</li>
           <li>JAVASCRIPT</li>
-        </ul>
+        </ul>''
      
       </aside>
 
@@ -55,15 +55,43 @@
     
     <footer>
       <p> Diretos reservados do Gato Laranja</p>
+
     </footer>
 
       <section id="contatos">
         <h2>contatos</h2>
-        <p>tem um projeto em mente?, entre em contatos</p>
-          <address>
-            Email: <a href="xxxx@gmail.com">xxxx@gmail.com</a><br>
-            Telefone:<a href="()xxxx-xxx">()xxxx-xxx</a><br>
-          </address>
+        <p>tem um projeto em mente?, entre em contato</p>
+        
+        <form action=""><!-- DAQUI PARA BAIXO É UM SISTEMA DE FORMULARIO-->
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required   placeholder="Digite seu nome"/><br> <!-- placeholder deixa uma frase na caixa de mensagem sugerindo oque escrever-->
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required   placeholder="Digite seu Email"/><br> <!--required deixa o campo obrigatorio para ser preeenchido-->
+
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required  placeholder="Digite seu telefone"/><br>
+
+          <label for="assunto">Assunto:</label>
+          <select name="assunto" id="assunto">
+            <option value="orçamento">Orçamento</option>
+            <option value="duvida">Duvida</option>
+            <option value="outro">Outro</option>
+          </select>
+          
+          <br>
+          
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" cols="30 " rows="10"></textarea> <!-- "textarea" cria uma caixa em branco para o usuario escrever -->
+        
+          <input type="checkbox" id="inscricao" name="inscricao">
+          <label for="inscricao"> Deseja receber minha newsletter?</label>
+
+          <br>
+
+            <input type="submit" value="Enviar mensagem">
+        
+        </form>
       </section>
   </body>
 
